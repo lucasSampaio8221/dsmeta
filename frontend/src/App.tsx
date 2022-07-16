@@ -1,7 +1,7 @@
 import Header from "./components/header"
 import SalesCard from "./components/SalesCard"
-function App() {
 
+function App() {
   return (
     <>
       <Header />
@@ -9,7 +9,6 @@ function App() {
         <section id="sales">
           <div className="dsmeta-container">
           <SalesCard />
-
           </div>
         </section>
       </main>
@@ -18,4 +17,3 @@ function App() {
 }
 
 export default App
-
