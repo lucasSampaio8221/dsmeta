@@ -7,7 +7,7 @@ import { useState } from 'react';
 function SalesCard() {
     const min = new Date(new Date().setDate(new Date().getDate() - 365));
     const max = new Date();
-    
+
     const [minDate, setMinDate] = useState(min);
     const [maxDate, setMaxDate] = useState(max);
 
@@ -32,18 +32,19 @@ function SalesCard() {
                     />
                 </div>
             </div>
-
-            <table className="dsmeta-sales-table">
-                <thead>
-                    <tr>
-                        <th className="show992">Id</th>
-                        <th className="show576">Data</th>
-                        <th>Vendedor</th>
-                        <th className="show992">Visitas</th>
-                        <th className="show992">Vendas</th>
-                        <th>Total</th>
-                        <th>Notificar</th>
-                    </tr>
+            <div>
+                <table className="dsmeta-sales-table">
+                    <thead>
+                        <tr>
+                            <th className="show992">ID</th>
+                            <th className="show576">Data</th>
+                            <th>Vendedor</th>
+                            <th className="show992">Visitas</th>
+                            <th className="show992">Vendas</th>
+                            <th>Total</th>
+                            <th>Notificar</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td className="show992">341</td>
@@ -85,9 +86,9 @@ function SalesCard() {
                             </td>
                         </tr>
                     </tbody>
-                </thead>
             </table>
         </div>
+        </div >
     )
 }
 
