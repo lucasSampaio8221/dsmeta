@@ -17,6 +17,7 @@ function SalesCard() {
 
     const [sales, setSales] = useState<Sale[]>([]);
 
+
     useEffect(() => {
 
         const dmin = minDate.toISOString().slice(0, 10);
@@ -26,7 +27,9 @@ function SalesCard() {
             .then(response => {
                 setSales(response.data.content);
             });
+
     }, [minDate, maxDate])
+
 
     return (
         <div className="dsmeta-card">
@@ -49,7 +52,6 @@ function SalesCard() {
                     />
                 </div>
             </div>
-
             <div>
                 <table className="dsmeta-sales-table">
                     <thead>
@@ -82,7 +84,6 @@ function SalesCard() {
                             )
                         })}
                     </tbody>
-
                 </table>
             </div>
 
